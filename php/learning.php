@@ -104,7 +104,7 @@
 //     case 7:
 //         $result = "3. French";
 //         break;
-    
+
 //     default:
 //         $result = "No option found";
 // }
@@ -409,4 +409,112 @@
 // foreach($keys as $key) {
 //     echo "key: " . $key . "\t" . "value: " . $person[$key] . "\n";
 // }
+
+
+
+// ########### Strings
+// ####
+
+// $name = "Ahmed Lotfy";
+
+// // echo $name[0];
+// // echo $name[1];
+// // echo $name[2];
+// // echo $name[3];
+// // echo $name[4];
+
+// // for($char = 0; $char < strlen($name); $char++) {
+// //     echo $name[$char] . "\n";
+// // }
+
+// // foreach ($name as $char) {
+// //     echo $name[$char] . "\n";
+// // }
+
+// $position = strpos($name,"Lotfy");
+// echo "Last Name: " . $position ."\n";
+
+// $last_name_replaced = str_replace("Lotfy","ELShenawy",$name);
+// echo $last_name_replaced ."\n";
+
+// $name_spaces = "    Ahmed Lotfy    ";
+// $trimmed_name = trim($name_spaces);
+// echo $trimmed_name . "\n";
+
+// $name_array = str_split($name);
+// print_r($name_array);
+
+// $name_array = explode(" ",$name); // like slice in js
+// print_r($name_array);
+
+
+########## Procederal programming example functions and so on the old way 
+
+// Shapes
+// Square, Triangle, Rectangle
+
+// rotate($degree)
+// playSound
+
+// function rotate($degree, $x, $y, $isAmoeba)
+// {
+//     $angle = 0;
+
+//     if ($isAmoeba) {
+
+//         $distanceFromOrigin = sqrt($x ** 2 + $y ** 2);
+//         $rotationInfluence = $distanceFromOrigin / 10;
+//         $randomFactor = rand(-10, 10);
+//         $newAngle = $angle + $degree + $randomFactor + $rotationInfluence;
+//     } else {
+//         $newAngle = $angle + $degree;
+//     }
+//     return $newAngle % 360;
+// }
+// function playSound($name)
+// {
+//     switch ($name) {
+//         case "square":
+//             echo "playing square.mp3..." . "\n";
+//             break;
+//         case "triangle":
+//             echo "playing triangle.mp3..." . "\n";
+//             break;
+//         case "rectangle":
+//             echo "playing rectangle.mp3..." . "\n";
+//             break;
+//         case "circle":
+//             echo "playing circle.mp3..." . "\n";
+//             break;
+//                     case "ameoba":
+//             echo "playing ameoba.mp3..." . "\n";
+//             break;
+//     }
+// }
+
+// $square = 45;
+// $triangle = 90;
+// $rectangle = 85;
+// $circle = 40;
+// $ameoba = 30;
+
+// $rotation_square = rotate($square, 0, 0, false);
+// echo $rotation_square ;
+// playSound("square");
+
+// $rotation_triangle = rotate($triangle, 0, 0, false);
+// echo $rotation_triangle ;
+// playSound("triangle");
+
+// $rotation_rectangle = rotate($rectangle, 0, 0, false);
+// echo $rotation_rectangle ;
+// playSound("rectangle");
+
+// $rotation_circle = rotate($circle, 0, 0, false);
+// echo $rotation_circle ;
+// playSound("circle");
+
+// $rotation_ameoba = rotate($ameoba, 50, 45, true);
+// echo $rotation_ameoba ;
+// playSound("ameoba");
 
